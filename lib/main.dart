@@ -76,7 +76,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: const Text('Give me a forecast'),
               ),
-              if (weatherResponse != null) Text('Today will be around ' + (weatherResponse!['current']['temp_c'] as double).toString() + '°C'),
+              if (weatherResponse != null)
+                Text('Today will be around ' + (weatherResponse!['current']['temp_c'] as double).toString() + '°C'),
             ],
           ),
         ),
